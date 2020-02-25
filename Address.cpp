@@ -1,3 +1,7 @@
+// Address.cpp
+// Group 7: Andia Dark, Aleem Muhammad, Jonathan Murphy, Laquisha Smith
+// Last edited: Feb. 24, 2020
+// Finds the address of the customer that is stored in the customers.dat file and also allows for an address to be entered if none is found
 #include <iostream>
 #include <string>
 #include "Address.h"
