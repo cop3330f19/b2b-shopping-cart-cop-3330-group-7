@@ -1,11 +1,11 @@
 #include <Address.h>
 #include <string>
 
-Address::Address (string sAddress, City, State, zCode){
-    setStreetAddress(string sAddress);
-    setCity(string City);
-    setState(string State);
-    setZipCode(string zCode);
+Address::Address (string sAddress, string City, string State, string zCode){
+    setStreetAddress(sAddress);
+    setCity(City);
+    setState(State);
+    setZipCode(zCode);
 }
 
 Address::Address (){
@@ -15,8 +15,6 @@ Address::Address (){
     setCity("");
     
 }
-
-string getAddress(void);
 
 void Address::setStreetAddress(string sAddress){
     streetAddress=sAddress;
@@ -48,7 +46,7 @@ string Address::getZipCode(){
 
 string Address::getAddress(void){
     string space = " ";
-    return streetAddress + space + city + space + state + space + zipCode;
+    return streetAddress + "\n" + city + ", " + state + space + zipCode;
 }
 
 // Ignore following
