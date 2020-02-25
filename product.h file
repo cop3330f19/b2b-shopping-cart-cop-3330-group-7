@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+
+class Product 
+{
+private:
+    int itemNo;
+    string description;
+    double price;
+    int stockQuantity;
+  
+public:
+    product(int itemNumber, stockQuantity, string description, double price);
+    product();
+
+
+    void setItemNumber(int itemNumber);
+    int getitemNumber();
+    void printItemNumber();
+    
+    void setDescription( string description);
+    string getDescription();
+    void printDescription;
+    
+    void setPrice (double price);
+    int getPrice();
+    void printPrice;
+    
+    void setStockQuantity(int StockQuantity);
+    int getStockQuantity();
+    void printStockQuantity;
+    
+};
