@@ -1,0 +1,65 @@
+#include <iostream>
+#include <string>
+#include "Product.h"
+using namespace std
+    
+    Product::Product(int itemNumber, stockQuantity, string description, double price, )
+    {
+        setItemNumber(itemNumber);
+        setDescription(description);
+        setPrice(price);
+        setStockQuantity(stockQuantity);
+    }
+    Product::Product()
+    {
+        itemNo=0;
+        description="";
+        price=0.0;
+        stockQuantity=0;
+    }
+
+void Product::setItemNumber(int itemNumber){
+        itemNo=itemNumber;
+    }
+
+    int Product::getItemNumber() {
+        return itemNo;
+    }
+
+    void Product::printItemNumber(){
+        cout << itemNo << endl;
+    }
+
+ void Product::setDescription (string description){
+     description=description;
+ }
+
+     string Product::getdescription(){
+         return description;
+        }
+
+void Product::printDescription() {
+        cout << description << endl;
+    }    
+
+void Product::setPrice( double price){
+        price=price;
+}
+    double Product::getPrice(){
+        return price;
+    }
+    
+    void Product::printPrice() {
+        cout << price << endl;
+    }
+       
+void Product::setStockQuantity (int stockQuantity){
+    stockQuantity=stockQuantity;
+}
+    int Product::getStockQuantity{
+        return stockQuantity;
+    }
+    
+    void Product::PrintStockQuantity{
+        cout << stockQuantity << endl;
+    }
