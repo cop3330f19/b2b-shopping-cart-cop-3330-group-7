@@ -21,6 +21,11 @@ string generateOrderNum()
     return oNum;
 }
 
+int indexRecorder()
+{
+    // if the object containing the address 
+}
+
 int main(){
    
     Customer customer1[21];//object for customer
@@ -30,19 +35,19 @@ int main(){
 
     string custNum;
     string custName;
-    string getCredit;
+    double getCredit;
     double credit;
     string *ptrCredit;
     string address;
     string input[100];
-    //string num[100];
+    
     
     for (int i=0;i<21;i++){
     getline(customerFile, input[i]);//num
     custNum = StringHelper::parse(input[i],'|')[0];
     custName = StringHelper::parse(input[i],'|')[1];
-    getCredit = StringHelper::parse(input[i],'|')[2];
-    credit= atof(getCredit);    
+    getCredit = stod(StringHelper::parse(input[i],'|')[2]);
+    //credit= atof(getCredit);    
     address= StringHelper::parse(input[i],'|')[3];
 
     customer1[i].setCustomerNum(custNum);
@@ -75,25 +80,34 @@ int main(){
 //        cout<<streetAddress<<endl;
 //        cout<<city<<endl<<state<<endl<<zipcode<<endl;
     }
-//product
+
+    
+    //product
     ifstream inventoryFile;
     Product product[100];
     inventoryFile.open("inventory.dat");
     string read[100];
     
-    for (int i=0;i<1;i++){
+    for (int i=0;i<20;i++){
     getline(inventoryFile, read[i]);//num
-    string itemNumber = StringHelper::parse(read[i],'|')[0];
-    string description = StringHelper::parse(read[i],'|')[1];
-    string price = StringHelper::parse(read[i],'|')[2];
-    string stockQuantity= StringHelper::parse(read[i],'|')[3];
+    int itemNumber = stoi(StringHelper::parse(read[i],',')[0]);
+        cout<<itemNumber<<endl;
+    string description =StringHelper::parse(read[i],',')[1];
+         cout<<description<<endl;
+    double price = stod(StringHelper::parse(read[i],',')[2]);
+         cout<<price<<endl;
+    int stockQuantity= stoi(StringHelper::parse(read[i],',')[3]);
+         cout<<stockQuantity<<endl;
     
-    product[i].setItemNumber(custNum);     
+    product[i].setItemNumber(itemNumber);     
     product[i].setDescription(description);
     product[i].setPrice(price);
     product[i].setStockQuantity(stockQuantity);
-      
+    //check by printing
+//     product[i].printItemNumber();
+//     product[i].printDescription();
+//     product[i].printPrice();
+//     product[i].printStockQuantity();    
     }
-    
 	return 0;
 }
