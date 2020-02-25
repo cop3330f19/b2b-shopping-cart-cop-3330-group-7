@@ -1,3 +1,7 @@
+// Address.h
+// Group 7: Andia Dark, Aleem Muhammad, Jonathan Murphy, Laquisha Smith
+// Last edited: Feb. 24, 2020
+// Contains the standard functions for the cpp file: Address.cpp
 #ifndef ADDRESS_H
 #define ADDRESS_H
 #include <string>
