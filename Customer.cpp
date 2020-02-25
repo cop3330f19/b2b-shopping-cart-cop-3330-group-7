@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "Customer.h"
+#include "Address.h"
 using namespace std;
 
 Customer::Customer(string num, string name, double credit)
@@ -11,36 +12,39 @@ Customer::Customer(string num, string name, double credit)
 }
 
 Customer::Customer() {
+    setCustomerNum("");
+    setCustomerName("");
+    setCredit(0.0);
     customerNum="";
     customerName="";
     lineOfCredit=0.0;
 }
 
-void setAddressPointer(string Address)
-{
-string Address * corperateAddress;
-}
-string getAddressPointer()
-{
-    return Address;
-}
+// void Address::setAddressPointer(string Address)
+// {
+// string Address * corperateAddress;
+// }
+// string getAddressPointer()
+// {
+//     return Address;
+// }
 void Customer::setCustomerNum (string num)
 {
-    CustomerNum=num;
+    customerNum=num;
 }
 string Customer::getCustomerNum()
 {
-    return CustomerNum;
+    return customerNum;
 }
 void Customer::setCustomerName (string name)
 {
-    CustomerName=name;
+    customerName=name;
 }
 string Customer::getCustomerName()
 {
-    return CustomerName;
+    return customerName;
 }
-void Customer::Credit (double credit)
+void Customer::setCredit (double credit)
 {
     lineOfCredit=credit;
 }
