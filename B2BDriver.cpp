@@ -29,7 +29,6 @@ int indexRecorder()
 int main(){
    
     Customer customer1[21];//object for customer
-//  vector <Customer> cust;
     ifstream customerFile;// customer file variable. 
     customerFile.open("customers.dat");//opens file of customer names
 
