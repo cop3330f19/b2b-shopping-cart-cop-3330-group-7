@@ -5,10 +5,10 @@ using namespace std;
 
 Address::Address(string streetAddress, string city, string state, string zipCode)
 {
-    setAddressStreet (string);
-    setAddressCity (string);
-    setAddressState (string);
-    setAddressZipCode (string);
+    setAddressStreet (streetAddress);
+    setAddressCity (city);
+    setAddressState (state);
+    setAddressZipCode (zipCode);
 }
 
 Address::Address(){
