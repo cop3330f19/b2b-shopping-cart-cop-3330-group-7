@@ -60,6 +60,6 @@ void Product::setStockQuantity (int stockQuantity){
         return stockQuantity;
     }
     
-    void Product::PrintStockQuantity{
+    void Product::PrintStockQuantity(){
         cout << stockQuantity << endl;
     }
