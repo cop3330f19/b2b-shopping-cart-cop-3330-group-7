@@ -75,7 +75,25 @@ int main(){
 //        cout<<streetAddress<<endl;
 //        cout<<city<<endl<<state<<endl<<zipcode<<endl;
     }
-
+//product
+    ifstream inventoryFile;
+    Product product[100];
+    inventoryFile.open("inventory.dat");
+    string read[100];
+    
+    for (int i=0;i<1;i++){
+    getline(inventoryFile, read[i]);//num
+    string itemNumber = StringHelper::parse(read[i],'|')[0];
+    string description = StringHelper::parse(read[i],'|')[1];
+    string price = StringHelper::parse(read[i],'|')[2];
+    string stockQuantity= StringHelper::parse(read[i],'|')[3];
+    
+    product[i].setItemNumber(custNum);     
+    product[i].setDescription(description);
+    product[i].setPrice(price);
+    product[i].setStockQuantity(stockQuantity);
+      
+    }
     
 	return 0;
 }
