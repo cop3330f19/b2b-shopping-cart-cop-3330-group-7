@@ -63,12 +63,12 @@ int main(){
     for (int i=0;i<21;i++)
     {
        x[i]=customer1[i].getCustomerName(custName);
-        if(x[i]=customerName)
+        if(x[i]==customerName)
         {
         return -1;
         }
         else
-            cout<<"The customer does nor exist"<<endl;
+            cout<<"The customer does not exist"<<endl;
     }
    
     //search for item
