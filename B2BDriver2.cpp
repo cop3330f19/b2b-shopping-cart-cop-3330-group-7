@@ -62,7 +62,7 @@ int main(){
     string x[21];
     for (int i=0;i<21;i++)
     {
-       x[i]=customer1[i].getCustomerName(custName);
+       x[i]=customer1[i].getCustomerName();
         if(x[i]==customerName)
         {
         return -1;
