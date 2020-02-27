@@ -1,4 +1,6 @@
+#include <string>
 class Address{
+    
     private:
     std::string streetAddress;
     std::string city;
@@ -6,10 +8,16 @@ class Address{
     std::string zipCode;
     
     public:
+    Address (std::string sAddress, std::string City, std::string State, std::string zCode);
+    Address ();
     std::string getAddress(void);
-    std::string setStreetAddress (std::string sAddress);
-    std::string setCity (std::string City);
-    std::string setState (std::string State);
-    std::string setZipCode (std::string zCode);
-}
-
+    void setStreetAddress (std::string sAddress);
+    void setCity (std::string City);
+    void setState (std::string State);
+    void setZipCode (std::string zCode);
+    
+    std::string getStreetAddress();
+    std::string getCity();
+    std::string getState();
+    std::string getZipCode();
+};
