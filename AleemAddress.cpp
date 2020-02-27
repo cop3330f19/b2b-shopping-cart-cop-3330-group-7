@@ -1,5 +1,7 @@
-#include <Address.h>
+#include "Address.h"
+#include <iostream>
 #include <string>
+using namespace std;
 
 Address::Address (string sAddress, string City, string State, string zCode){
     setStreetAddress(sAddress);
@@ -50,22 +52,22 @@ string Address::getAddress(void){
 }
 
 // Ignore following
-void Address::printAddress(){
+// void Address::printAddress(){
     
-}
+// }
 
-void Address::printStreetAddress(){
-    cout << streetAddress;
-}
+// void Address::printStreetAddress(){
+//     cout << streetAddress;
+// }
 
-void Address::printCity(){
-    cout << city;
-}
+// void Address::printCity(){
+//     cout << city;
+// }
 
-void Address::printState(){
-    cout << state;
-}
+// void Address::printState(){
+//     cout << state;
+// }
 
-void Address::printZipCode(){
-    cout << zipCode;
-}
+// void Address::printZipCode(){
+//     cout << zipCode;
+// }
