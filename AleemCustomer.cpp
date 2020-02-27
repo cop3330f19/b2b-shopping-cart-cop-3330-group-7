@@ -1,5 +1,7 @@
-#include <Customer.h>
+#include "Customer.h"
 #include <string>
+#include <iostream>
+using namespace std;
 
 void Customer::setCustomerName(string cName){
     customerName=cName;
@@ -15,10 +17,10 @@ string Customer::getCustomerName(){
     return (customerName);
 }
 
-string Customer::setCustomerNumber(){
+string Customer::getCustomerNumber(){
     return customerNumber;
 }
 
-double Customer::setLineOfCredit(){
+double Customer::getLineOfCredit(){
     return lineOfCredit;
 }
