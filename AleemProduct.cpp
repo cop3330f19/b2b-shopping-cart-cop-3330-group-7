@@ -1,11 +1,13 @@
-#include <Product.h>
+#include "Product.h"
 #include <string>
+#include <iostream>
+using namespace std;
 
-Product::Product (int itemNo, string description, double price, int stockQuantity){
-    setItemNo(int iNum)
-    setDescription(string Description)
-    setPrice(double Price)
-    setStockQuantity(int StockQuantity)
+Product::Product (int iNum, string Description, double Price, int StockQuantity){
+    setItemNo(iNum);
+    setDescription(Description);
+    setPrice(Price);
+    setStockQuantity(StockQuantity);
 }
 
 Product::Product (){
